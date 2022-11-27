@@ -56,15 +56,19 @@ int[] GetArray(int size, int minValue, int maxValue){
 //[1 2 3 4 5] -> 5 8 3
 //[6 7 3 6] -> 36 21
 
-/*
-int[] array = GetArray(10, 1, 10);
+
+int[] array = GetArray(5, 1, 10);
 Console.WriteLine($"[{String.Join(" ", array)}]");
 
 int j = array.Length - 1;
-for (int i = 0; i < (array.Length + 1) / 2; i++)
-{
-    Console.Write(array[i] * array[j] + " ");
-    j--;
+for (int i = 0; i < (array.Length + 1) / 2; i++){
+    if (i!= j) {
+        Console.Write(array[i] * array[j] + " ");
+        j--;
+    }
+    else {
+        Console.Write(array[i] + " ");
+    }
 }
 //-----------------------------------------МЕТОДЫ-------------------------------------------------
 int[] GetArray(int size, int minValue, int maxValue){
@@ -75,9 +79,9 @@ int[] GetArray(int size, int minValue, int maxValue){
     return result;
 }
 
-*/
-//Задача 38: Задайте массив целых чисел от -10 до 10. Найдите разницу между максимальным и минимальным элементов массива.
 
+//Задача 38: Задайте массив целых чисел от -10 до 10. Найдите разницу между максимальным и минимальным элементов массива.
+/*
 int[] array = GetArray(10, -10, 10);
 Console.WriteLine($"[{String.Join(" ", array)}]");
 
@@ -97,3 +101,4 @@ int[] GetArray(int size, int minValue, int maxValue){
     }
     return result;
 }
+*/
