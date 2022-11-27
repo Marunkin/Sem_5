@@ -3,7 +3,7 @@
 
 //[345, 897, 568, 234] -> 2
 /*
-int[] array = GetArray(10, 100, 1000);
+int[] array = GetArray(10, 100, 999);
 Console.WriteLine($"[{String.Join(", ", array)}]");
 
 int count = 0;
